@@ -20,3 +20,10 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
+
+
+// static files. (css, images)
+app.use('/public', express.static(path.join(__dirname, 'public')));
+
+// routes
+app.use('/', routes);
