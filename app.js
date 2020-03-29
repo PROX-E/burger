@@ -47,4 +47,11 @@ app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error');
   });
+
   
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+app.listen(port, () => console.log("Server listening on " + port));
+app.on('error', onError);
+app.on('listening', onListening);
