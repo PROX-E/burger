@@ -55,3 +55,17 @@ app.use(function(err, req, res, next) {
 app.listen(port, () => console.log("Server listening on " + port));
 app.on('error', onError);
 app.on('listening', onListening);
+
+
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+function onError(error) {
+    if (error.syscall !== 'listen') {
+      throw error;
+    }
+    const bind = typeof port === 'string'
+      ? 'Pipe ' + port
+      : 'Port ' + port;
+  
