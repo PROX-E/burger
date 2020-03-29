@@ -4,7 +4,18 @@
   "description": " a burger logger with MySQL, Node, Express, Handlebars and a homemade OR",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "serve": "nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.17.1",
+    "hbs": "~4.0.1",
+    "method-override": "^2.3.8",
+    "morgan": "~1.8.1",
+    "mysql2": "^1.2.0"
   },
   "repository": {
     "type": "git",
@@ -15,8 +26,5 @@
   "bugs": {
     "url": "https://github.com/PROX-E/burger/issues"
   },
-  "homepage": "https://github.com/PROX-E/burger#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "homepage": "https://github.com/PROX-E/burger#readme"
 }
