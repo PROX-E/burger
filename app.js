@@ -84,3 +84,17 @@ function onError(error) {
       throw error;
   }
 }
+
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+function onListening() {
+    const addr = server.address();
+    const bind = typeof addr === 'string'
+      ? 'pipe ' + addr
+      : 'port ' + addr.port;
+  }
+  
+  module.exports = app;
+  
