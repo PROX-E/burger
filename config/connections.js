@@ -6,7 +6,7 @@ module.exports = (async() => {
     port: 3306,
     user: 'root',
     password: 'Hshriver18!',
-    database: 'burgers',
+    database: 'burgers_db',
     connectionLimit: 5
   });
   console.log("Connection pool created!");
