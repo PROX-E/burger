@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-sm-4">
       <div class="panel panel-primary">
-      <div class="panel-heading">Burgers to devour</div>
+      <div class="panel-heading">Burgers to Devour</div>
         <div class="panel-body">
           {{#each toEat}}
           <form class="form-inline" action="/{{this.id}}?_method=PUT" method="POST" enctype="application/x-www-form-urlencoded">
@@ -30,7 +30,7 @@
 
     <div class="col-sm-4">
       <div class="panel panel-danger">
-      <div class="panel-heading">devoured</div>
+      <div class="panel-heading">Devoured!</div>
         <div class="panel-body">
           {{#each eaten}}
           <h4><span class="label label-warning">{{this.burger_name}}</span></h4>
